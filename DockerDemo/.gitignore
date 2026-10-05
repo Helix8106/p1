@@ -1,0 +1,10 @@
+@'
+node_modules/
+__pycache__/
+~$*
+*.docx
+*.pdf
+*.pptx
+Git_Practical/
+Experiment-8/
+'@ | Set-Content .gitignore -Encoding ASCII
