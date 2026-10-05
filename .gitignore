@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+~$*
+*.tmp
+*.docx
+*.pdf
+*.pptx
+Git_Practical/
+Experiment-8/

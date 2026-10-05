@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Code downloaded from GitHub'
+                sh 'ls -l'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Build stage: nothing to compile for a Python program'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'python3 hello.py'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying the application...'
+            }
+        }
+    }
+}
